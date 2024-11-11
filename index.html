@@ -38,17 +38,14 @@
         /* Estilos para los botones */
         .button-container {
             display: flex;
-            justify-content: center;
+            flex-direction: column; /* Coloca los botones en columna */
+            align-items: center; /* Centra los botones horizontalmente */
             gap: 10px; /* Espacio entre los botones */
-            flex-wrap: wrap; /* Permite que se ajusten en pantallas pequeñas */
         }
 
-        /* Estilos para los botones */
         .button {
-            flex: 1 1 auto;
-            width: 100%;
-            max-width: 250px;
-            margin: 10px 0;
+            width: 100%; /* Hace que cada botón ocupe el 100% del ancho del contenedor */
+            max-width: 300px; /* Ancho máximo para evitar que se estire demasiado en pantallas grandes */
             padding: 12px 20px;
             font-size: 16px;
             font-weight: bold;
@@ -71,9 +68,11 @@
         <h1>Página de Inicio</h1>
         <p>Selecciona una de las gráficas a continuación:</p>
         
-        <a href="preferencia_de_hora_por_mes.html" class="button">Preferencia de Hora por Mes</a>
-        <a href="reservas_online_por_dia_semana_febrero_octubre.html" class="button">Reservas Online por Día de la Semana</a>
-        <a href="porcentaje_citas_online_febrero_octubre.html" class="button">Porcentaje de Citas Online</a>
+        <div class="button-container">
+            <a href="preferencia_de_hora_por_mes.html" class="button">Preferencia de Hora por Mes</a>
+            <a href="reservas_online_por_dia_semana_febrero_octubre.html" class="button">Reservas Online por Día de la Semana</a>
+            <a href="porcentaje_citas_online_febrero_octubre.html" class="button">Porcentaje de Citas Online</a>
+        </div>
     </div>
 </body>
 </html>
