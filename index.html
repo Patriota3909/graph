@@ -36,8 +36,16 @@
         }
 
         /* Estilos para los botones */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px; /* Espacio entre los botones */
+            flex-wrap: wrap; /* Permite que se ajusten en pantallas pequeñas */
+        }
+
+        /* Estilos para los botones */
         .button {
-            display: inline-block;
+            flex: 1 1 auto;
             width: 100%;
             max-width: 250px;
             margin: 10px 0;
